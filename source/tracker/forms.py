@@ -34,5 +34,4 @@ class TaskForm(forms.ModelForm):
 
 
 class SearchForm(forms.Form):
-    search = forms.CharField(max_length=20, required=False)
-    search.widget.attrs['class'] = 'form-search'
+    search = forms.CharField(max_length=20, required=False, label='')

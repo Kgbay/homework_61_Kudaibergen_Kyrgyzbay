@@ -128,12 +128,13 @@ footer {
     text-align: center;
     border: solid 1px gray;
 }
-.form-search {
-    border-color: green !important;
-    color: red !important;
-}
 .logout-btn {
     border-color: transparent !important;
     padding: 0 !important;
+}
+.form-search {
+    display: flex;
+    align-items: baseline;
+    justify-content: flex-end;
 }
 
