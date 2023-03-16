@@ -2,14 +2,9 @@
 {% block content %}
     <div class="container">
         <form method="post" class="form-add">
-            <div class="form-control form-control-lg">
                 {% csrf_token %}
                 {{ form }}
-            </div>
-            <div class="form-row">
-                <input type="hidden" name="next" value="{{ request.GET.next }}"/>
                 <input type="submit" value="войти" class="btn btn-primary">
-            </div>
         </form>
     </div>
 {% endblock %}
