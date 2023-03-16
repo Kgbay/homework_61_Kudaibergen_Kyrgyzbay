@@ -157,3 +157,8 @@ footer {
     border-color: green !important;
     color: red !important;
 }
+.logout-btn {
+    border-color: transparent !important;
+    padding: 0 !important;
+}
+
