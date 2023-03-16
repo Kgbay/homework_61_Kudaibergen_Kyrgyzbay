@@ -1,12 +1,15 @@
 {% extends 'base.html' %}
 {% block content %}
-    <form action="{% url 'login' %}" method="post">
-        <div class="form">
-            {% csrf_token %}
-            {{ form.as_p}}
-        </div>
-        <div class="form-row">
-             <input type="submit" value="войти" class="btn btn-primary">
-        </div>
-    </form>
+    <div class="container">
+        <form method="post" class="form-add">
+            <div class="form-control form-control-lg">
+                {% csrf_token %}
+                {{ form.as_p}}
+            </div>
+            <div class="form-row">
+                <input type="hidden" name="next" value="{{ request.GET.next }}"/>
+                <input type="submit" value="войти" class="btn btn-primary">
+            </div>
+        </form>
+    </div>
 {% endblock %}

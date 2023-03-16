@@ -1,7 +1,7 @@
 from django import forms
 from django.core.exceptions import ValidationError
 
-from .models import Task, Project
+from .models import Task
 
 
 class TaskForm(forms.ModelForm):
