@@ -44,6 +44,14 @@ body {
     width: 100% !important;
     margin: 10px 0 !important;
   }
+  .pagination-side {
+    display: none !important;
+  }
+}
+@media only screen and (max-width: 400px ){
+    .pagination-center {
+    display: none !important;
+  }
 }
 .btn-primary {
     background-color: #00008B !important;
@@ -66,41 +74,6 @@ form, .form-control {
 a:link {
     text-decoration: none;
 }
-.my-legend .legend-title {
-    text-align: left;
-    margin-bottom: 8px;
-    font-weight: bold;
-    font-size: 100%;
-}
-.my-legend .legend-scale ul {
-    margin: 0;
-    padding: 0;
-    float: left;
-    list-style: none;
-}
-.my-legend .legend-scale ul li {
-    display: block;
-    float: left;
-    width: 100px;
-    margin-bottom: 6px;
-    text-align: center;
-    font-size: 80%;
-    list-style: none;
-}
-.my-legend ul.legend-labels li span {
-    display: block;
-    float: left;
-    height: 15px;
-    width: 100%;
-}
-.my-legend .legend-source {
-    font-size: 70%;
-    color: #999;
-    clear: both;
-}
-.my-legend a {
-    color: #777;
-}
 .card {
     margin-top: 20px;
 }
@@ -120,7 +93,9 @@ footer {
     margin: 0;
 }
 .pagination {
-    text-align: center;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
 }
 .pagination a, .pagination .page-disabled {
     display: inline-block;

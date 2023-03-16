@@ -35,18 +35,6 @@
             </a>
         {% endfor %}
 
-        <div class='my-legend'>
-            <div class='legend-title'>Цветовая легенда типов задач</div>
-                <div class='legend-scale'>
-                      <ul class='legend-labels'>
-                            <li><span style='background-color:#ffcc99;'></span>Задача</li>
-                            <li><span style='background-color:#ffe699;'></span>Баг</li>
-                            <li><span style='background-color:#ffff99;'></span>Улучшение</li>
-                            <li><span style='background-color:#e6ff99;'></span>В процессе</li>
-                            <li><span style='background-color:#ccff99;'></span>Остальное</li>
-                      </ul>
-                </div>
-        </div>
         {% if is_paginated %}
             {% include 'partial/pagination.html' %}
         {% endif %}

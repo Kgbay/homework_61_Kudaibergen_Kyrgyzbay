@@ -12,7 +12,6 @@ class IndexView(ListView):
     context_object_name = 'tasks'
     ordering = ('-created_at')
     paginate_by = 10
-    allow_empty = False
 
 
     def get(self, request, *args, **kwargs):
